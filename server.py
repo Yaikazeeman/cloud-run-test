@@ -13,7 +13,7 @@ INSTANCE_NAME ="my-cloud-run-test-353212:europe-west1:my-cloud-run-test-db2"
 SQLALCHEMY_DATABASE_URI = f'mysql+mysqldb://root:{PASSWORD}@{PUBLIC_IP_ADDRESS}/{DBNAME}?unix_socket=/cloudsql/{PROJECT_ID}:{INSTANCE_NAME}'
  
 # configuration
-app.config["SECRET_KEY"] = "bSkb22Tr+YaTLDtaIVtoui99n8KPVeDxLtil/A2Q"
+app.config["SECRET_KEY"] = "SECRET"
 app.config["SQLALCHEMY_DATABASE_URI"] = SQLALCHEMY_DATABASE_URI
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = True
 
